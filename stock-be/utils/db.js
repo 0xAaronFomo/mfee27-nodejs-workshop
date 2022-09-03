@@ -11,6 +11,7 @@ let pool = mysql
     database: process.env.DB_NAME,
     // 設定pool連線上限
     connectionLimit: 10,
+    dateStrings: true,
   })
   .promise();
 
